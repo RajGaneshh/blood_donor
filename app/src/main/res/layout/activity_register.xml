@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/regg"
+    tools:context="com.example.gaja.blooddonor.register">
+
+    <Button
+        android:id="@+id/reg_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/login_color"
+        android:text="REGISTER"
+        android:textColor="@color/button_text_color" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/colorBackground"
+        android:ems="10"
+        android:hint="USERNAME"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp" />
+
+    <EditText
+        android:id="@+id/reg_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:hint="PASSWORD"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/textView4"
+        android:layout_alignLeft="@+id/name"
+        android:layout_alignStart="@+id/name"
+        android:layout_marginTop="108dp" />
+
+    <EditText
+        android:id="@+id/blood_grp_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/place"
+        android:layout_alignLeft="@+id/place"
+        android:layout_alignStart="@+id/place"
+        android:layout_marginBottom="44dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:hint=" BLOOD GROUP"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/num"
+        android:layout_alignLeft="@+id/reg_pass"
+        android:layout_alignStart="@+id/reg_pass"
+        android:layout_marginBottom="22dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:hint="PLACE"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/reg_data"
+        android:layout_alignLeft="@+id/place"
+        android:layout_alignStart="@+id/place"
+        android:layout_marginBottom="52dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:hint="PHONE NUMBER"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:fontFamily="monospace"
+        android:text="REGISTER"
+        android:textColor="@color/button_text_color"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text=" A+	 O+	 B+	AB+	 A-	 O-	 B-	 AB- "
+        android:textColor="@color/cardview_light_background"
+        android:textStyle="bold"
+        android:layout_above="@+id/place"
+        android:layout_alignLeft="@+id/blood_grp_reg"
+        android:layout_alignStart="@+id/blood_grp_reg" />
+
+</RelativeLayout>
